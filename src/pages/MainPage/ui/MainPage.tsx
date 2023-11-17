@@ -9,10 +9,13 @@ import { Header } from '@/widgets/Header';
 import { Input } from '@/shared/ui/Input/Input';
 import { CoinList } from '@/entities/Coin';
 import { type ICoin } from '@/entities/Coin/model/types/coin';
+import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
   const [inputValue, setInputValue] = useState('');
   const [coinList, setCoinList] = useState<ICoin[]>([]);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     $api.get<ICoin[]>('/coins').then(response => {
@@ -28,7 +31,7 @@ const MainPage = () => {
     <main className="main-page">
       <Header />
       <div className={styles.container}>
-        <Input placeholder="Coin title" value={inputValue} onChange={handleInputChange} />
+        <Input placeholder={t('Название монеты')} value={inputValue} onChange={handleInputChange} />
         <CoinList coins={coinList} />
       </div>
     </main>
