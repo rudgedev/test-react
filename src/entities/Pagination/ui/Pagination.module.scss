@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 24px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px 0px rgba(31, 41, 55, 0.14);
+  background-color: #fff;
+  position: relative;
+}
+
+.navigation {
+  font-weight: 600;
+}
+
+.arrow {
+  padding: 16px;
+  margin: 0 10px;
+}

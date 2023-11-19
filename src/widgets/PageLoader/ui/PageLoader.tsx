@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 
-import styles from './PageLoader.module.scss';
-
 import { EllipsisLoader } from '@/shared/ui/EllipsisLoader/EllipsisLoader';
+
+import styles from './PageLoader.module.scss';
 
 interface IPageLoaderProps {
   className?: string;

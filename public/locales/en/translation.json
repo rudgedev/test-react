@@ -4,5 +4,6 @@
   "Название монеты": "Coin title",
   "Поддерживаемая сеть": "Supported network",
   "Статус монеты": "Coin Status",
-	"Страница не найдена": "Page not found"
+  "Страница не найдена": "Page not found",
+  "Нет данных": "No data"
 }

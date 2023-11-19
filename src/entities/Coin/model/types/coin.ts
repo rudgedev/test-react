@@ -1,18 +1,18 @@
-enum Network {
-  'ERC20' = 1,
-  'BEP20' = 2,
-  'TRC20' = 3,
-}
+export const Network = {
+  1: 'ERC20',
+  2: 'BEP20',
+  3: 'TRC20',
+} as const;
 
-enum Status {
-  'Доступна' = 1,
-  'В обработке' = 2,
-  'Недоступна' = 3,
-}
+export const Status = {
+  1: 'Доступна',
+  2: 'В обработке',
+  3: 'Недоступна',
+} as const;
 
 export interface ICoin {
   id: number;
   title: string;
-  network: Network;
-  status: Status;
+  network: keyof typeof Network;
+  status: keyof typeof Status;
 }

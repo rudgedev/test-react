@@ -19,22 +19,11 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
-      alias: {
-        map: [
-          ['@/*', './src/*'],
-          ['@app/*', './src/app/*'],
-          ['@entities/*', './src/entities/*'],
-          ['@features/*', './src/features/*'],
-          ['@pages/*', './src/pages/*'],
-          ['@widgets/*', './src/widgets/*'],
-          ['@shared/*', './src/shared/*'],
-        ],
-        extensions: ['.ts', '.tsx'],
-      },
-      node: {
-        extensions: ['.ts', '.tsx'],
-      },
+      typescript: {},
     },
   },
   plugins: ['react', '@typescript-eslint', 'prettier', 'import'],
@@ -69,6 +58,7 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-props-no-spreading': 'warn',
     'react/function-component-definition': 'off',
+    'react/display-name': 'off',
     'no-shadow': 'off',
   },
 };
