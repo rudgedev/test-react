@@ -11,6 +11,7 @@ npm start - запуск проекта
 ## Сборка проекта
 
 npm run build:dev - сборка для dev-режима
+
 npm run build:prod - сборка для prod-режима
 
 ---
