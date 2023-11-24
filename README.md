@@ -16,9 +16,11 @@ npm run build:prod - сборка для prod-режима
 ## Запуск линтеров
 
 npm run eslint - проверка кода с помощью eslint
+
 npm run eslint:fix - исправление кода с помощью eslint
 
 npm run stylelint - проверка кода с помощью stylelint
+
 npm run stylelint:fix - исправление кода с помощью stylelint
 
 ---
