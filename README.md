@@ -1,7 +1,9 @@
 ## Запуск проекта
 
 npm install - устанавливаем зависимости
+
 npm start:dev:server - запуск json-server
+
 npm start - запуск проекта
 
 ---
