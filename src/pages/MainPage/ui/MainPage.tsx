@@ -32,20 +32,6 @@ const MainPage = () => {
     debouncedFetchCoinList();
   }, [page, inputValue]);
 
-  useEffect(() => {
-    $api
-      .get<ICoin[]>('/coins/1/price')
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(e => {
-        console.error('Error fetch coins: ' + e);
-      })
-      .finally(() => {
-        // setIsLoading(false);
-      });
-  }, []);
-
   const fetchCoinList = () => {
     setIsLoading(true);
 

@@ -3,7 +3,7 @@ import { type ReactNode, useCallback, useEffect, useState } from 'react';
 import classNames from 'classnames';
 
 import { Overlay } from '../Overlay/Overlay';
-import { Portal } from '../Portal/Portal';
+import { Portal } from '../Portal';
 
 import cls from './Modal.module.scss';
 

@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import {  useEffect, useState } from 'react';
 
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +10,7 @@ import { type IBalance } from '../model/types/balance';
 
 import styles from './Balance.module.scss';
 
-export const Balance = memo(() => {
+export const Balance = () => {
   const [balance, setBalance] = useState(0);
 
   const { t } = useTranslation();
@@ -32,4 +32,4 @@ export const Balance = memo(() => {
       </span>
     </div>
   );
-});
+};

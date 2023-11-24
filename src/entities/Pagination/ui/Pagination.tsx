@@ -1,10 +1,8 @@
-import { memo } from 'react';
-
 import { type IPaginationProps } from '../model/types/pagination';
 
 import styles from './Pagination.module.scss';
 
-export const Pagination = memo((props: IPaginationProps) => {
+export const Pagination = (props: IPaginationProps) => {
   const { nav = null, disable, onNextPageClick, onPrevPageClick } = props;
 
   const handleNextPageClick = () => {
@@ -30,4 +28,4 @@ export const Pagination = memo((props: IPaginationProps) => {
       </button>
     </div>
   );
-});
+};

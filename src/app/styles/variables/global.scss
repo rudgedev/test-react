@@ -9,13 +9,13 @@
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
-	--bg-color: #f0f0f0;
-	--inverted-bg-color: #fff;
-	--primary-color: #000;
+  --bg-color: #f0f0f0;
+  --inverted-bg-color: #fff;
+  --primary-color: #000;
   --overlay-color: rgba(0 0 0 / 60%);
 
-	 --header-height: 70px;
+  --header-height: 70px;
 
-   --overlay-z-index: 100;
-   --modal-z-index: 1000;
+  --overlay-z-index: 100;
+  --modal-z-index: 1000;
 }
